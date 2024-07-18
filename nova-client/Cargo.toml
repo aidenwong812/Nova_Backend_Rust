@@ -5,9 +5,15 @@ edition = "2021"
 
 [dependencies]
 sei-client={path = "../sei-client"}
+
 reqwest = { version = "0.12.4", features = ["json","cookies"] }
+
+sqlx = { version = "0.7.4", features = ["postgres", "runtime-tokio-native-tls", "macros"] }
 tokio = { version = "1.38.0", features = ["full"] }
-serde = { version = "1.0", features = ["derive"] }
-serde_json={version = "1.0.0"}
-futures = "0.3"
+
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json={version = "1.0.118"}
+
 chrono="0.4.38"
+
+db={path="../db"}

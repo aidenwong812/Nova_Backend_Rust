@@ -1,3 +1,25 @@
 {
-    "rust-analyzer.checkOnSave": false
+    "rust-analyzer.checkOnSave": false,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "postgres",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "wjk2101352835"
+        },
+        {
+            "previewLimit": 50,
+            "server": "89.163.148.219",
+            "port": 5555,
+            "driver": "PostgreSQL",
+            "name": "postgres",
+            "username": "postgres",
+            "database": "postgres",
+            "password": "Wjk2101352835"
+        }
+    ]
 }

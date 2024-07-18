@@ -1,0 +1,10 @@
+services :
+  db :
+    image: postgres
+    container_name: nft_data_db
+    environment:
+       POSTGRES_PASSWORD: Wjk2101352835
+    volumes:
+      - /root/db:/var/lib/postgresql/data
+    ports:
+      - "5555:5432"
